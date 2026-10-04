@@ -417,27 +417,29 @@
                 <!-- Left Side: 5 Pill Contacts -->
                 <div class="col-lg-7 d-flex flex-column gap-3">
 
+                    <!-- Telepon (tidak bisa diklik) -->
                     <div class="d-flex align-items-center gap-3 p-3 border rounded shadow-sm bg-white">
                         <i class="fa-solid fa-phone text-secondary"></i>
                         <span class="fw-semibold text-dark small">+62 821 226 2442</span>
                     </div>
 
+                    <!-- Email (tidak bisa diklik) -->
                     <div class="d-flex align-items-center gap-3 p-3 border rounded shadow-sm bg-white">
                         <i class="fa-regular fa-envelope text-secondary"></i>
                         <span class="fw-semibold text-dark small">smkn4@smkn4-bogor.sch.id</span>
                     </div>
 
-                    <a href="https://instagram.com/smkn4kotabogor" target="_blank" class="d-flex align-items-center gap-3 p-3 border rounded shadow-sm bg-white text-decoration-none">
+                    <a href="https://instagram.com/smkn4kotabogor" target="_blank" rel="noopener noreferrer" class="d-flex align-items-center gap-3 p-3 border rounded shadow-sm bg-white text-decoration-none">
                         <i class="fa-brands fa-instagram text-secondary"></i>
                         <span class="fw-semibold text-dark small">@smkn4kotabogor</span>
                     </a>
 
-                    <a href="https://youtube.com/@smknegeri4bogor905" target="_blank" class="d-flex align-items-center gap-3 p-3 border rounded shadow-sm bg-white text-decoration-none">
+                    <a href="https://youtube.com/@smknegeri4bogor905" target="_blank" rel="noopener noreferrer" class="d-flex align-items-center gap-3 p-3 border rounded shadow-sm bg-white text-decoration-none">
                         <i class="fa-brands fa-youtube text-secondary"></i>
                         <span class="fw-semibold text-dark small">@smknegeri4bogor905</span>
                     </a>
 
-                    <a href="https://facebook.com/SMKNEGERI4KOTABOGOR" target="_blank" class="d-flex align-items-center gap-3 p-3 border rounded shadow-sm bg-white text-decoration-none">
+                    <a href="https://facebook.com/SMKNEGERI4KOTABOGOR" target="_blank" rel="noopener noreferrer" class="d-flex align-items-center gap-3 p-3 border rounded shadow-sm bg-white text-decoration-none">
                         <i class="fa-brands fa-facebook-f text-secondary"></i>
                         <span class="fw-semibold text-dark small">SMK NEGERI 4 KOTA BOGOR</span>
                     </a>
@@ -448,15 +450,17 @@
                 <div class="col-lg-5">
                     <div class="card border shadow-sm p-3 rounded-4 h-100 d-flex flex-column">
 
+                        <!-- Peta tertanam: pencarian alamat sekolah -->
                         <div class="rounded overflow-hidden mb-3 border" style="height: 200px;">
                             <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.049882521616!2d106.82211897587186!3d-6.6407333933538!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69c8b16ee07ef5%3A0x14ab25b17e0868f0!2sSMK%20Negeri%204%20Kota%20Bogor!5e0!3m2!1sid!2sid!4v1700000000000!5m2!1sid!2sid"
+                                src="https://maps.google.com/maps?q=SMK+Negeri+4+Kota+Bogor+Jalan+Raya+Tajur+Muarasari+Bogor+Selatan&hl=id&z=16&output=embed"
                                 width="100%"
                                 height="100%"
                                 style="border:0;"
                                 allowfullscreen=""
                                 loading="lazy"
-                                referrerpolicy="no-referrer-when-downgrade">
+                                referrerpolicy="no-referrer-when-downgrade"
+                                title="Peta lokasi SMKN 4 Kota Bogor">
                             </iframe>
                         </div>
 
@@ -465,11 +469,12 @@
                         <div class="d-flex align-items-start gap-2 p-3 rounded mb-3 border border-primary-subtle" style="background-color: #eff6ff;">
                             <i class="fa-solid fa-location-dot mt-1 text-primary"></i>
                             <p class="mb-0 small fw-medium" style="color: #1e3a8a;">
-                                Jl. Raya Tajur, Kp. Muarasari RT.03/RW.03, Muarasari, Kec. Bogor Selatan, Kota Bogor, Jawa Barat 16137
+                                Jl. Raya Tajur, Kp. Buntar RT.02/RW.08, Kel. Muarasari, Kec. Bogor Selatan, Kota Bogor, Jawa Barat 16137
                             </p>
                         </div>
 
-                        <a href="https://maps.google.com/?q=SMK+Negeri+4+Kota+Bogor" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary w-100 fw-bold mt-auto d-flex align-items-center justify-content-center gap-2">
+                        <!-- Link Google Maps -->
+                        <a href="https://maps.app.goo.gl/xWggQbg8P8LviTuZ8" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary w-100 fw-bold mt-auto d-flex align-items-center justify-content-center gap-2">
                             <i class="fa-solid fa-location-arrow"></i> Lihat di Google Maps
                         </a>
                     </div>
