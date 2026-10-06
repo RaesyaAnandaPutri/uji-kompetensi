@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Str;
 use App\Models\Galeri;
 
 class GaleriController extends Controller
@@ -60,6 +61,20 @@ class GaleriController extends Controller
     {
         $galeriList = Galeri::where('status', 'publik')->latest()->get();
         return view('galeri', compact('galeriList'));
+    }
+
+    // PUBLIK: unduh foto galeri (hanya yang berstatus publik)
+    public function download($id)
+    {
+        $galeri = Galeri::where('status', 'publik')->findOrFail($id);
+
+        $path = public_path($galeri->gambar);
+        abort_unless(file_exists($path), 404);
+
+        $ext  = pathinfo($path, PATHINFO_EXTENSION);
+        $nama = Str::slug($galeri->judul) . '.' . $ext;
+
+        return response()->download($path, $nama);
     }
 
     public function edit($id)

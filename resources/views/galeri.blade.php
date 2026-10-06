@@ -120,6 +120,22 @@
             gap: 6px;
         }
 
+        /* Ikon Unduh (kecil, tanpa latar) */
+        .btn-unduh {
+            display: inline-block;
+            color: #64748b;
+            font-size: 1rem;
+            line-height: 1;
+            padding: 4px 6px 4px 0;
+            text-decoration: none;
+            transition: color 0.2s ease, transform 0.2s ease;
+        }
+
+        .btn-unduh:hover {
+            color: #0d6efd;
+            transform: translateY(-1px);
+        }
+
         /* Badge Kategori */
         .badge-kategori {
             position: absolute;
@@ -205,6 +221,16 @@
                                         <i class="fa-regular fa-calendar"></i>
                                         <span>{{ \Carbon\Carbon::parse($item->tanggal)->translatedFormat('d F Y') }}</span>
                                     </div>
+                                </div>
+
+                                <!-- Ikon Unduh Foto -->
+                                <div class="mt-2">
+                                    <a href="{{ route('galeri.unduh', $item->id) }}"
+                                       class="btn-unduh"
+                                       title="Unduh foto"
+                                       aria-label="Unduh foto {{ $item->judul }}">
+                                        <i class="fa-solid fa-download"></i>
+                                    </a>
                                 </div>
 
                                 <span class="badge-kategori badge-{{ strtolower($item->kategori) }}">

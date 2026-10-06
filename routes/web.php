@@ -18,6 +18,7 @@ Route::get('/', function () {
 })->name('home');
 
 Route::get('/galeri', [GaleriController::class, 'publicIndex'])->name('galeri');
+Route::get('/galeri/{id}/unduh', [GaleriController::class, 'download'])->name('galeri.unduh');
 Route::get('/artikel', [ArtikelController::class, 'publicIndex'])->name('artikel');
 Route::get('/detail-artikel/{id}', [ArtikelController::class, 'show'])->name('detail-artikel');
 Route::get('/produk', [ProdukController::class, 'publicIndex'])->name('produk');
