@@ -121,29 +121,34 @@
 
         /* Responsive untuk mobile */
         @media (max-width: 768px) {
+            /* UBAH LAYOUT UTAMA MENJADI MENUMPUK KE BAWAH */
+            .admin-layout {
+                flex-direction: column;
+            }
+
             .admin-sidebar {
                 position: relative;
                 width: 100%;
+                height: auto;
                 min-height: auto;
                 margin-bottom: 1rem;
-                flex-direction: row;
-                align-items: center;
-                justify-content: space-between;
+                flex-direction: column; /* Tetap susun menu ke bawah agar rapi */
                 border-right: none;
                 border-bottom: 1px solid #f1f5f9;
             }
 
             .admin-content {
                 margin-left: 0;
+                padding: 1rem;
             }
 
             .admin-sidebar nav {
-                flex-direction: row !important;
+                flex-direction: column !important;
                 gap: 0.5rem !important;
             }
 
             .admin-sidebar nav .sidebar-nav-link span {
-                display: none;
+                display: inline; /* Tampilkan kembali teks menu agar jelas di HP */
             }
         }
     </style>

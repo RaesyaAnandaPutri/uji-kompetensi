@@ -2,6 +2,7 @@
     <div>
         <!-- Logo Sekolah -->
         <div class="d-flex align-items-center gap-3 px-2 mb-4">
+            <!-- Disesuaikan ke logo_smkn_4.png -->
             <img src="{{ asset('storage/logo smkn 4.png') }}" alt="Logo SMKN 4 Bogor" width="40" height="40" class="object-fit-contain">
             <div>
                 <span class="brand-title">SMKN 4</span>
@@ -48,7 +49,7 @@
     </div>
 
     <!-- Footer Sidebar -->
-    <div class="px-2">
+    <div class="px-2 mt-4">
         <form action="{{ route('logout') }}" method="POST" class="mb-3">
             @csrf
             <button type="submit" class="sidebar-nav-link border-0 bg-transparent w-100 text-start text-danger">
